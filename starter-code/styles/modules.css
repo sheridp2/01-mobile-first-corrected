@@ -5,13 +5,23 @@
 /* REVIEW: Float the main header to the left, to make room for the hamburger menu. */
 .heading-group-h1 {
   float: left;
-  padding: 0 0 .2em 1em;
+  /*padding: 0 0 .2em 1em;*/
+}
+/*.heading-group-h1 h1{
+  margin: 0px;
+  padding: 0px;
+}*/
+
+.heading-group-h1 h2{
+  visibility: hidden;
 }
 
 /* TODO: Add styles for the icon-menu class. It should be bigger, and off to the right. */
 
 .main-nav {
   padding: 0.1em;
+  float: right;
+  display: inline;
 }
 
 .main-nav ul {
@@ -55,3 +65,8 @@
          - Main should be all on one row, with padding spaced better for a larger screen.
          - Just, ya know, try to make it look good! */
 /* @media only screen... */
+@media screen and (min-width:740px){
+  .heading-group-h1 h2{
+    visibility: visible;
+  }
+}
