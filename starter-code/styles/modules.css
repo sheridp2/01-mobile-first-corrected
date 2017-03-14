@@ -7,15 +7,6 @@
   float: left;
   /*padding: 0 0 .2em 1em;*/
 }
-/*.heading-group-h1 h1{
-  margin: 0px;
-  padding: 0px;
-}*/
-
-.heading-group-h1 h2{
-  visibility: hidden;
-}
-
 /* TODO: Add styles for the icon-menu class. It should be bigger, and off to the right. */
 
 .main-nav {
@@ -35,10 +26,21 @@
   display: block;
 }
 
+.main-btn{
+  font-size: 32px;
+  width: 75px;
+  height: 75px;
+  color: #131313;
+  background: rgba(022, 022, 022, 0.1);
+  float: right;
+  -webkit-margin-before: 0.83em;
+  -webkit-margin-after: 0.83em;
+}
+
 .main-nav li {
   margin-right: .4em;
-  font-size: 1.5em;
-  padding: .5em .2em;
+  font-size: 1.6em;
+  /*padding: .5em .2em;*/
   border-bottom: 1px solid #ccc;
 }
 
@@ -65,8 +67,30 @@
          - Main should be all on one row, with padding spaced better for a larger screen.
          - Just, ya know, try to make it look good! */
 /* @media only screen... */
-@media screen and (min-width:740px){
+@media screen and (min-width:1025px){
+  .main-nav{
+    float: none;
+
+  }
+  .main-btn{
+    display: none;
+  }
+  .heading-group-h1 h1{
+    visibility: visible;
+    margin-bottom: 0;
+  }
   .heading-group-h1 h2{
     visibility: visible;
+    margin-top: 0;
+  }
+  .main-nav li{
+    text-align: center;
+    display: inline;
+  }
+  .main-nav ul{
+    clear: both;
+    padding-left: 33px;
+    display: block;
+    /*text-align: center;*/
   }
 }
